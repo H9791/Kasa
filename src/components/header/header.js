@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import kasa from './Kasa.png';
-
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
@@ -11,8 +11,8 @@ export default function Header() {
                     <img src={kasa} alt="Kasa logo" />
                 </h1>
                 <nav>
-                    <a href="#">Accueil</a>
-                    <a href="#">A Propos</a>
+                    <Link to="/">Accueil</Link>
+                    <Link to="/a-propos">A Propos</Link>
                 </nav>
             </header>
         </>

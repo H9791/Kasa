@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;    
     height: 220px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./underheader.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,6 +10,14 @@
     padding-left: 20px;
     padding-right: 10px;
     margin-bottom: 50px;
+}
+
+.under-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./underheader.jpg');
+}
+
+.under-header2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./underheader2.jpg');
 }
 
 #under-header p{

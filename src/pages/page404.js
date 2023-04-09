@@ -1,14 +1,15 @@
 import React from 'react';
 import Header from '../components/header/header';
-import Underheader from '../components/underheader/underheader';
 import Footer from '../components/footer/footer';
+import Page404 from '../components/page404/page404';
 
-export default function Apropos(){
+export default function NoPage(){
     return (
         <>
         <Header />
-        <Underheader cover={2}/>
+        <Page404 />
         <Footer />
         </>
-    )
+        );
+
 }

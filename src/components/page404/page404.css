@@ -1,0 +1,57 @@
+#main404{
+    font-family: Montserrat;
+    color: #ff6060;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#main404 h1{
+    font-size:288px;
+    margin: 0;
+}
+
+#main404 h2{
+    font-size:36px;
+    margin: auto;
+    text-align: center;
+}
+
+#main404 span{
+    white-space: nowrap;
+    
+}
+
+#main404 a{
+    color: #FF6060;
+}
+
+@media screen and (max-width: 768px){
+    #main404{
+        font-family: Montserrat;
+        color: #ff6060;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    #main404 h1{
+        font-size:96px;
+        margin: 0;
+    }
+    
+    #main404 h2{
+        font-size:18px;
+        margin: 0;
+    }
+
+    #main404 a{
+        color: #FF6060;
+    }
+}
