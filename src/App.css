@@ -1,0 +1,50 @@
+/*MINIMAL CSS RESET*/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 50px 80px;
+    font-family: Montserrat;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  a{
+    margin:0;
+  }
+
+  body, ol, ul {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+@media screen and (max-width: 768px){
+    html{
+        /*margin: 20px 20px;*/
+    }
+
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
