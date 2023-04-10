@@ -1,13 +1,18 @@
 import React from 'react';
 import './thumb.css';
+import { Link } from 'react-router-dom';
 
-export default function Thumb({id, title, cover}){
+export default function Thumb( {logement, key} ) {
+
+
     return (
         <>
-            <article className="thumb">
-                <p>{title}</p>
-                <img src={cover} alt="Image thumbnail" id={id}/>
-            </article>
+            <Link to="/logement" state={logement}>
+                <article className="thumb">
+                    <p>{logement.title}</p>
+                    <img src={logement.cover} alt="Image thumbnail" />
+                </article>
+            </Link>
         </>
     )
 }

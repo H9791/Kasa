@@ -32,6 +32,7 @@
 @media screen and (max-width: 768px){
     #under-header {
         height: 100px;
+        margin-bottom: 30px;
     }
 
     #under-header p{
@@ -39,5 +40,6 @@
         font-size: 24px;
         padding-left: 20px;
         padding-right: 20px;
+        
        }
 }
