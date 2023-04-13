@@ -9,6 +9,8 @@
 	position: relative;
     border-radius: 25px;
     overflow: hidden;
+    margin-bottom: 30px;
+
 }
 
 
@@ -41,3 +43,9 @@
 
 
 
+@media screen and (max-width: 768px){
+    #carousel{
+        height: 200px;
+    }
+    
+}

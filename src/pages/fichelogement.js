@@ -1,8 +1,8 @@
 import Header from '../components/header/header';
-import Underheader from '../components/underheader/underheader';
 import Footer from '../components/footer/footer';
 import { useLocation } from 'react-router-dom';
 import Carousel from '../components/carousel/carousel';
+import Infologement from '../components/infologement/infologement';
 
 export default function Fichelogement() {
     const location = useLocation();
@@ -13,7 +13,7 @@ export default function Fichelogement() {
         <div>
             <Header />
             <Carousel slides={state.pictures}/>
-            
+            <Infologement info={state}/>
             <Footer />
         </div>
     );

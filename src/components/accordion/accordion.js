@@ -11,12 +11,12 @@ export default function Accordion({ value, description }) {
     }
 
     return (
-        <li className="accordion-item">
+        <div className="accordion-item">
             <button onClick={handleClick}>
                 <p className="value">{value}</p>
                 <p className={chevron}></p>
             </button>
             {isOpen && (<p className="description"> {description} </p>)}
-        </li>
+        </div>
     )
 }

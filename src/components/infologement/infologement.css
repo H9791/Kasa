@@ -1,0 +1,80 @@
+#infologement {
+    color: #ff6060;
+}
+
+#infologement .title-name-tags p {
+    margin-bottom: 10px;
+}
+
+#infologement .title-name-tags .tag {
+    color: #fff;
+    background-color: #ff6060;
+    padding: 3px 20px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#infologement .description-equipements {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+#infologement .description-equipements .accordion {
+    flex-grow: 1;
+    max-width: 47%;
+}
+
+#infologement .host-picture {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 999px;
+}
+
+#infologement .star-rating {
+    height: 20px;
+    width: 20px;
+    margin: 3px;
+}
+
+#infologement .outer-heading-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+#infologement .name-pic-flex{
+    display: flex;
+    gap:10px;
+}
+
+#infologement .name-pic-flex p{
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    #infologement .description-equipements {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #infologement .description-equipements .accordion {
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    #infologement .outer-heading-flex{
+        flex-direction: column;
+    }
+
+    #infologement .name-pic-stars{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+    }
+}

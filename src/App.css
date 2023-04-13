@@ -14,8 +14,9 @@ html {
     box-sizing: inherit;
   }
   
-  a, p{
+  a, p, h1, h2, h3{
     margin:0;
+    font-weight: normal;
   }
 
   ol,ul {
