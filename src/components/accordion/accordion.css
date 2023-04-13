@@ -28,7 +28,7 @@
     margin-bottom: auto;
 }
 
-.accordion-item button *{
+.accordion-item button .chevron-down, .accordion-item button .chevron-up{
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 768px) {
     .accordion-item {
-        margin: 15px auto 15px auto;
+        margin: 0px auto 15px auto;
         max-width: 100%;
     }
 
