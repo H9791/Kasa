@@ -9,7 +9,7 @@
     border-radius: 25px;
     padding-left: 20px;
     padding-right: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .under-header {
@@ -32,7 +32,7 @@
 @media screen and (max-width: 768px){
     #under-header {
         height: 100px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     #under-header p{

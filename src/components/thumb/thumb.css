@@ -10,9 +10,10 @@
 .thumb p {
     position: absolute;
     color: white;
-    bottom: 0px;
-    left: 10px;
-    right: 10px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    font-size: 18px;
 }
 
 .thumb img {

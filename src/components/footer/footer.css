@@ -6,8 +6,9 @@
     height: 200px;
     width: 100%;
     background-color: black;
-    position: absolute;    
+    /*position: absolute;    */
     bottom: 5px;
+    margin-top: auto;
        
 }
 

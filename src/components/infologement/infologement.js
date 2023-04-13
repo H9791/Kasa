@@ -17,7 +17,7 @@ export default function Infologement({ info }) {
     let rating = Array(5).fill(0).map((_, index) => {
         index <= info.rating - 1 ? stars = redstar : stars = star;
         return (
-            <img className="star-rating" src={stars} alt="Star rating" />
+            <div className="star-rating"><img  src={stars} alt="Star rating" /></div>
         )
     })
 
@@ -38,7 +38,7 @@ export default function Infologement({ info }) {
                 <div className="title-name-tags">
                     <h1>{info.title}</h1>
                     <p className="location-city">{info.location}</p>
-                    <p>{info.tags.map((tag, index) => { return (<span className="tag">{tag}</span>) })}
+                    <p className="tags">{info.tags.map((tag, index) => { return (<div className="tag">{tag}</div>) })}
                     </p>
                 </div>
 
@@ -48,10 +48,10 @@ export default function Infologement({ info }) {
                             {names}
                         </div>
                         <div className="host-picture">
-                            <img src={info.host.picture} alt="Host picture" />
+                            <img src={info.host.picture} alt="Host" />
                         </div>
                     </div>
-                    <div>
+                    <div className="rating-nowrap">
                         {rating}
                     </div>
                 </div>
