@@ -1,20 +1,28 @@
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
-import { useLocation } from 'react-router-dom';
+/*import { useLocation } from 'react-router-dom';*/
+import { useParams } from 'react-router-dom';
 import Gallery from '../components/gallery/gallery';
 import Infologement from '../components/infologement/infologement';
-
+import Houses from '../assets/logements.json';
+import Nopage from './nopage';
 export default function Fichelogement() {
-    const location = useLocation();
-    const state = location.state;
     
+    const { houseId } = useParams();
+
+    let info = Houses.find(element => element.id === houseId);
+
     return (
+        info?(
         <div>
             <Header />
-            <Gallery slides={state.pictures}/>
-            <Infologement info={state}/>
+            <Gallery slides={info.pictures}/>
+            <Infologement info={info}/>
             <Footer />
-        </div>
+        </div>):(
+            /*bad url, house doesn't exist, show error page*/
+            <Nopage />
+        )
     );
 }
 

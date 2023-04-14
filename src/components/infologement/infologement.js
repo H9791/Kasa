@@ -2,9 +2,16 @@ import './infologement.css';
 import Accordion from '../accordion/accordion';
 import star from './star.svg'
 import redstar from './redstar.svg';
+/*import { useParams } from 'react-router-dom';
+import Houses from '../../assets/logements.json';*/
 
 export default function Infologement({ info }) {
 
+   /* const { houseId } = useParams();
+    console.log("houseId: " + houseId);
+
+    let info = Houses.find(element => element.id === houseId);
+*/
     //get equipements
     let equipements = info.equipments.map((equipment, index) => {
         return (
@@ -15,11 +22,11 @@ export default function Infologement({ info }) {
     let stars = "";
 
     let rating = Array(5).fill(0).map((_, index) => {
-        
+
         stars = index <= info.rating - 1 ? redstar : star;
 
         return (
-            <div key={index} className="star-rating"><img  src={stars} alt="Star rating" /></div>
+            <div key={index} className="star-rating"><img src={stars} alt="Star rating" /></div>
         )
     })
 

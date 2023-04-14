@@ -1,3 +1,5 @@
+
+
 #header {
    display: flex;
    justify-content: space-between;
@@ -27,6 +29,14 @@
     color: #FF6060;
     font-size: 24px; 
     white-space: nowrap;
+}
+
+#header nav .home-active {
+    text-decoration: underline;
+}
+
+#header nav .apropos-active {
+    text-decoration: underline;
 }
 
 #header nav *:hover{

@@ -6,7 +6,7 @@ export default function Valuesarea() {
 
 
     let accordions = values.map((accordion, index) => {
-        return <Accordion value={accordion.value} description={accordion.description} />
+        return <Accordion value={accordion.value} description={accordion.description} key={accordion.value}/>
     });
 
     return (
