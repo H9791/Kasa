@@ -24,7 +24,6 @@ export default function Gallery({ slides }) {
     }
 
     return (
-        <>
             <div id="carousel">
                 {slides.length>1?(
                 <div className="arrows">
@@ -34,6 +33,5 @@ export default function Gallery({ slides }) {
                 </div>):null}
                 <img className="carousel-image" src={slides[slideNumber]} alt="Gallery" />
             </div>
-        </>
     );
 }

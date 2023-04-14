@@ -19,15 +19,13 @@ export default function Infologement({ info }) {
         stars = index <= info.rating - 1 ? redstar : star;
 
         return (
-            <div className="star-rating"><img  src={stars} alt="Star rating" /></div>
+            <div key={index} className="star-rating"><img  src={stars} alt="Star rating" /></div>
         )
     })
 
     let names = info.host.name.split(" ").map((name, index) => {
-        return (<>
-            <p>{name}</p>
-        </>
-
+        return (
+            <p key={index}>{name}</p>
         )
     });
 
@@ -37,8 +35,8 @@ export default function Infologement({ info }) {
                 <div className="title-name-tags">
                     <h1>{info.title}</h1>
                     <p className="location-city">{info.location}</p>
-                    <p className="tags">{info.tags.map((tag, index) => { return (<div className="tag">{tag}</div>) })}
-                    </p>
+                    <div className="tags">{info.tags.map((tag, index) => { return (<p key={index} className="tag">{tag}</p>) })}
+                    </div>
                 </div>
 
                 <div className="name-pic-stars">

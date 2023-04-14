@@ -7,8 +7,7 @@ import Infologement from '../components/infologement/infologement';
 export default function Fichelogement() {
     const location = useLocation();
     const state = location.state;
-    console.log(state);
-
+    
     return (
         <div>
             <Header />

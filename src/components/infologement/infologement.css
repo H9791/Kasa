@@ -2,10 +2,14 @@
     color: #ff6060;
 }
 
-#infologement .title-name-tags p {
+
+
+#infologement .title-name-tags .location-city {
     margin-bottom: 10px;
     font-size: 18px;
 }
+
+
 #infologement .title-name-tags h1 {
     font-size: 36px;
 }
@@ -88,7 +92,7 @@
 
 @media screen and (max-width: 768px) {
 
-    #infologement .title-name-tags p {
+    #infologement .title-name-tags .location-city {
         
         font-size: 14px;
     }
