@@ -10,7 +10,7 @@ export default function Thumb( {logement, key} ) {
             <Link to="/logement" state={logement}>
                 <article className="thumb">
                     <p>{logement.title}</p>
-                    <img src={logement.cover} alt="Image thumbnail" />
+                    <img src={logement.cover} alt="Thumbnail" />
                 </article>
             </Link>
         </>

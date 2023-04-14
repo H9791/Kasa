@@ -18,18 +18,30 @@
     position: absolute;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 95%;
+    height: 100%;
 }
 
 #carousel .arrows .arrow-left{
-    
+    height:80px;
+    width: 80px;
     left: 20px;
 }
 
 #carousel .arrows .arrow-right{
+    height:80px;
+    width: 80px;
     right: 20px;
 }
 
+#carousel .slide-number{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
 
 #carousel .carousel-image{
    

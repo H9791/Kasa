@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Home from './pages/home';
@@ -13,8 +12,8 @@ function App() {
                 <Route path="/">
                     <Route index element={<Home />}/>
                     <Route path="a-propos" element={<Apropos />}/>
-                    <Route path="*" element={<Page404/>} />
                     <Route path="logement" element={<Fichelogement />}/>
+                    <Route path="*" element={<Page404 />} />
                 </Route>
             </Routes>
         </BrowserRouter>

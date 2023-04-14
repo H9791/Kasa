@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import './carousel.css';
+import './gallery.css';
 import arrowleft from './arrowleft.svg';
 import arrowright from './arrowright.svg';
-export default function Carousel({ slides }) {
+export default function Gallery({ slides }) {
 
     const [slideNumber, setSlideNumber] = useState(0);
 
@@ -26,11 +26,13 @@ export default function Carousel({ slides }) {
     return (
         <>
             <div id="carousel">
+                {slides.length>1?(
                 <div className="arrows">
-                    <img className="arrow-left" src={arrowleft} onClick={handleClickLeft} />
-                    <img className="arrow-right" src={arrowright} onClick={handleClickRight} />
-                </div>
-                <img className="carousel-image" src={slides[slideNumber]} alt="Image carrousel" />
+                    <img className="arrow-left" src={arrowleft} onClick={handleClickLeft} alt="Arrow left"/>
+                    <div className="slide-number">{slideNumber+1}/{slides.length}</div>
+                    <img className="arrow-right" src={arrowright} onClick={handleClickRight} alt="Arrow right" />
+                </div>):null}
+                <img className="carousel-image" src={slides[slideNumber]} alt="Gallery" />
             </div>
         </>
     );

@@ -1,7 +1,7 @@
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import { useLocation } from 'react-router-dom';
-import Carousel from '../components/carousel/carousel';
+import Gallery from '../components/gallery/gallery';
 import Infologement from '../components/infologement/infologement';
 
 export default function Fichelogement() {
@@ -12,7 +12,7 @@ export default function Fichelogement() {
     return (
         <div>
             <Header />
-            <Carousel slides={state.pictures}/>
+            <Gallery slides={state.pictures}/>
             <Infologement info={state}/>
             <Footer />
         </div>

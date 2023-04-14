@@ -15,7 +15,9 @@ export default function Infologement({ info }) {
     let stars = "";
 
     let rating = Array(5).fill(0).map((_, index) => {
-        index <= info.rating - 1 ? stars = redstar : stars = star;
+        
+        stars = index <= info.rating - 1 ? redstar : star;
+
         return (
             <div className="star-rating"><img  src={stars} alt="Star rating" /></div>
         )
@@ -29,11 +31,8 @@ export default function Infologement({ info }) {
         )
     });
 
-
     return (
         <div id="infologement">
-
-
             <div className="outer-heading-flex">
                 <div className="title-name-tags">
                     <h1>{info.title}</h1>
