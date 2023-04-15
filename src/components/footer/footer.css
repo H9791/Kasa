@@ -5,11 +5,7 @@
     align-items: center;
     height: 200px;
     width: 100%;
-    background-color: black;
-    /*position: absolute;    */
-    bottom: 5px;
-    margin-top: auto;
-       
+    background-color: black;      
 }
 
 #footer img {

@@ -4,13 +4,13 @@ import Underheader from '../components/underheader/underheader';
 import Footer from '../components/footer/footer';
 import Valuesarea from '../components/valuesarea/valuesarea';
 
-export default function Apropos(){
+export default function Apropos() {
     return (
-        <>
-        <Header />
-        <Underheader cover={2}/>
-        <Valuesarea />
-        <Footer />
-        </>
+        <div>
+            <Header />
+            <Underheader cover={2} />
+            <Valuesarea />
+            <Footer />
+        </div>
     )
 }

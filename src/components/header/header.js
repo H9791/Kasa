@@ -6,11 +6,8 @@ import { Link, useLocation } from 'react-router-dom';
 export default function Header() {
 
     const path = useLocation().pathname;
-    console.log("PATH: " + path);
     let classNameHome = path === "/" ? "home-active" : "";
     let classNameAPropos = path === "/a-propos" ? "apropos-active" : "";
-    console.log("classNameHome: " + classNameHome);
-    console.log("classNameAPropos: " + classNameAPropos);
 
     return (
         <header id="header">

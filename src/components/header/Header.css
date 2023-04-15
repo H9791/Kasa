@@ -39,9 +39,9 @@
     text-decoration: underline;
 }
 
-#header nav *:hover{
+/*#header nav *:hover{
     text-decoration: underline;
-}
+}*/
 
 @media screen and (max-width: 768px){
 

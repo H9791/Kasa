@@ -7,15 +7,10 @@ import Houses from '../../assets/logements.json';*/
 
 export default function Infologement({ info }) {
 
-   /* const { houseId } = useParams();
-    console.log("houseId: " + houseId);
-
-    let info = Houses.find(element => element.id === houseId);
-*/
     //get equipements
     let equipements = info.equipments.map((equipment, index) => {
         return (
-            <p>{equipment}</p>
+            <p key={index}>{equipment}</p>
         )
     });
 
