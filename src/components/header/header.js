@@ -11,13 +11,11 @@ export default function Header() {
     
     return (
         <header id="header">
-            <h1 id="heading" aria-label="Heading Kasa">
+            <h1 id="heading" aria-label="Heading Kasa" >
                 <img src={kasa} alt="Kasa logo" />
             </h1>
             <nav>
-
                 <Link className={classNameHome} to="/">Accueil</Link>
-
                 <Link className={classNameAPropos} to="/a-propos">A Propos</Link>
             </nav>
         </header>
