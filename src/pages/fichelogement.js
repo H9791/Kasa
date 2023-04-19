@@ -4,13 +4,13 @@ import Footer from '../components/footer/footer';
 import { useParams } from 'react-router-dom';
 import Gallery from '../components/gallery/gallery';
 import Infologement from '../components/infologement/infologement';
-import Houses from '../assets/logements.json';
+import houses from '../assets/logements.json';
 import Nopage from './nopage';
 export default function Fichelogement() {
     
     const { houseId } = useParams();
 
-    let info = Houses.find(element => element.id === houseId);
+    let info = houses.find(element => element.id === houseId);
 
     return (
         info?(

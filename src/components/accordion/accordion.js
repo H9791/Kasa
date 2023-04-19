@@ -16,7 +16,7 @@ export default function Accordion({ value, description }) {
                 <p className="value">{value}</p>
                 <p className={chevron}></p>
             </button>
-            {isOpen && (<p className="description"> {description} </p>)}
+            {isOpen && (<div className="description"> {description} </div>)}
         </div>
     )
 }

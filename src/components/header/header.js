@@ -8,7 +8,7 @@ export default function Header() {
     const path = useLocation().pathname;
     let classNameHome = path === "/" ? "home-active" : "";
     let classNameAPropos = path === "/a-propos" ? "apropos-active" : "";
-
+    
     return (
         <header id="header">
             <h1 id="heading" aria-label="Heading Kasa">
