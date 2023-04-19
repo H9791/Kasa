@@ -1,5 +1,3 @@
-
-
 #header {
    display: flex;
    justify-content: space-between;
@@ -38,10 +36,6 @@
 #header nav .apropos-active {
     text-decoration: underline;
 }
-
-/*#header nav *:hover{
-    text-decoration: underline;
-}*/
 
 @media screen and (max-width: 768px){
 
