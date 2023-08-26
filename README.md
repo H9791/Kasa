@@ -1,3 +1,10 @@
+# Kasa
+
+Kasa has been in the apartment rental business for nearly 10 years now. With more than 500 ads posted every day, Kasa is one of the leading apartment rental companies in France.
+
+![Banner](src/assets/kasa-banner.webp)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
