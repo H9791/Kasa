@@ -3,6 +3,8 @@
 ## The Site is live at: https://kasa-travel-agency.netlify.app/
 
 Kasa has been in the apartment rental business for nearly 10 years now. With more than 500 ads posted every day, Kasa is one of the leading apartment rental companies in France.
+<hr>
+Project Kasa is a front-end for a real estate agency that rents properties for short or long term accomodation. KASA is a complete rewrite of a website that was previously implemented in ASP.NET. This updated version is build with React.
 
 ![Banner](src/assets/kasa-banner.webp)
 
